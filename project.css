@@ -1,0 +1,590 @@
+/* ===================================
+   General Styles
+   =================================== */
+   body {
+    font-family: 'Ink Free', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* ===================================
+   Header Styles
+   =================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1e1e1e;
+}
+
+#Logo {
+    width: 150px;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #cccccc;
+}
+
+/* ===================================
+   Main Content Styles
+   =================================== */
+main {
+    padding: 40px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 60px;
+}
+
+/* ===================================
+   Home Section Styles
+   =================================== */
+#home {
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.icon-github:hover {
+    color: rgb(111, 20, 196);
+}
+
+.icon-instagram:hover {
+    color: rgb(255, 72, 0);
+}
+
+.icon-linkedin:hover {
+    color: rgb(6, 6, 124);
+}
+
+.icon-phone:hover,
+.icon-globe:hover {
+    color: #ffffff;
+}
+
+.search-form {
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.search-form input {
+    padding: 10px 40px 10px 15px;
+    border: 2px solid #555555;
+    border-radius: 5px;
+    width: 250px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.search-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.search-button:hover {
+    color: #ff5722;
+}
+
+/* ===================================
+   About Section Styles
+   =================================== */
+#about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-me img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #ff5722;
+}
+
+.about-content {
+    max-width: 700px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.detail-item {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.detail-item:hover {
+    transform: translateY(-10px);
+}
+
+.detail-item h3 {
+    font-size: 2rem;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+.detail-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* ===================================
+   Portfolio Section Styles
+   =================================== */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio_img,
+.featured_img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.portfolio-featured {
+    flex: 1 1 500px;
+    max-width: 600px;
+}
+
+.featured_img {
+    height: 300px;
+}
+
+/* ===================================
+   Blog Section Styles
+   =================================== */
+.blog-container {
+    text-align: center;
+}
+
+.blog-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-header h2 {
+    font-size: 1.8rem;
+    color: #ff5722;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.blog-quote {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    flex: 1 1 300px;
+    max-width: 350px;
+    transition: transform 0.3s;
+}
+
+.blog-quote:hover {
+    transform: translateY(-10px);
+}
+
+.blog-quote p {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #ff5722;
+}
+
+.quote_img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blog-featured {
+    flex: 1 1 500px;
+    max-width: 600px;
+}
+
+.blog-featured .featured_img {
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* ===================================
+   Contact Section Styles
+   =================================== */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-form,
+.site-map,
+.contact-video {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 300px;
+    max-width: 400px;
+    transition: transform 0.3s;
+}
+
+.contact-form:hover,
+.site-map:hover,
+.contact-video:hover {
+    transform: translateY(-10px);
+}
+
+.contact-form h1,
+.site-map h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.divider {
+    width: 120px;
+    border: 0;
+    height: 2px;
+    background-color: #ff5722;
+    margin: 0 auto 20px auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #555555;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #cccccc;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-family: 'Ink Free', sans-serif;
+    font-weight: bold;
+    border-radius: 12px;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #555555;
+}
+
+.site-map a.contact-email {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: red;
+    transition: color 0.3s;
+}
+
+.site-map a.contact-email:hover {
+    color: #ffcccc;
+}
+
+.site-map a.contact-email i {
+    margin-right: 8px;
+}
+
+.contact-phones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.contact-phones i {
+    font-size: 1.2rem;
+}
+
+.contact-phones p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.contact-video video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ===================================
+   Footer Styles
+   =================================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+@media (max-width: 1024px) {
+    header {
+        padding: 20px;
+    }
+
+    .nav-list {
+        gap: 15px;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home p {
+        font-size: 1.3rem;
+    }
+
+    .about-content,
+    .detail-item,
+    .portfolio-item,
+    .blog-quote,
+    .contact-form,
+    .site-map,
+    .contact-video {
+        max-width: 100%;
+    }
+
+    .portfolio-featured,
+    .blog-featured {
+        max-width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .social-links a {
+        margin: 0 5px;
+        font-size: 20px;
+    }
+
+    .search-form input {
+        width: 200px;
+    }
+
+    .portfolio-container,
+    .blog-posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    .search-form input {
+        width: 150px;
+    }
+
+    .social-links a {
+        margin: 0 3px;
+        font-size: 18px;
+    }
+
+    .about-me img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .detail-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .detail-item p {
+        font-size: 0.9rem;
+    }
+
+    .portfolio-item h3,
+    .blog-quote p,
+    .site-map h1,
+    .contact-form h1,
+    .site-map a.contact-email,
+    .contact-phones p {
+        font-size: 1rem;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Removed Sass-specific syntax */
+/* ===================================
+   Removed Sass Variables and Mixins
+   =================================== */

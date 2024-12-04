@@ -1,0 +1,15 @@
+// _variables.scss
+$primary-color: #ffffff;
+$secondary-color: #1e1e1e;
+
+// _header.scss
+header {
+    background-color: $secondary-color;
+    color: $primary-color;
+    // other styles
+}
+
+// style.scss
+@import 'variables';
+@import 'header';
+// import other partials
